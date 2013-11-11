@@ -8,7 +8,7 @@ I've used the Zend library to query Youtube results, but the library is convolut
 * [Obtaining your Youtube API] (https://cloud.google.com/console)
 
 ####How To Use
-*  Be sure to require Youtube.php: require_once('Youtube/Youtube.php');
+*  Be sure to require Youtube.php: `require_once('Youtube/Youtube.php');`
 *  Instantiate your object: `$yt = new Youtube();`
 *  Set your Youtube API key: `$yt->key('{API_KEY}');`
 *  Set your Youtube search parameters:
@@ -38,4 +38,4 @@ If for example, you set maxResults = 10, you will retrieve an output of 10 ids a
 
 ####Real Example Usage
 *  This script is used to power the video section part of [Game Binder] (http://www.gamebinder.com/)
-*  Link to [Assassin's Creed Walkthrough] (x: http://www.gamebinder.com/12/assassins-creed/yt_walkthrough/)
+*  Link to [Assassin's Creed Walkthrough] (http://www.gamebinder.com/12/assassins-creed/yt_walkthrough/)
