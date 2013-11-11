@@ -7,7 +7,7 @@ Youtube API -v3
 #Obtaining your Youtube API: https://cloud.google.com/console
 
 -Notes
-I've used the Zend library to query Youtube results, but it the library is convoluted, and written for version 2.  I created my own library specifically geared towards V3.  It's much easier to extend, and ALOT faster in retriving Titles and VideoIDS.
+I've used the Zend library to query Youtube results, but the library is convoluted, difficult to extend, and written for version 2.  I created my own library specifically geared towards V3.  It's much easier to extend, and ALOT faster and less expensive in retriving Titles and VideoIDS.  This is for two reasons.  I am using version 3, and I also make use of static variables.  Thus, there is no need to continuously call the API on every "get" function until the "clear" function is called.
 
 ##########
 How to use
@@ -34,7 +34,9 @@ $title = $yt->get()->title();
 
 If for example, you set maxResults = 10, you will retrieve an output of 10 ids and 10 titles in a feed.  $id and $title are arrays that hold this feed, and they can be iterated through in a for, or foreach loop.
 
-6.  A shell example is provided in index.php
+6.  Be sure you call the clear function after you are done retrieving results: $yt->clear();
+
+7.  A shell example is provided in index.php
 
 ##################
 Real Example Usage
