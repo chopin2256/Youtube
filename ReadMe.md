@@ -38,4 +38,4 @@ If for example, you set maxResults = 10, you will retrieve an output of 10 ids a
 
 ####Real Example Usage
 *  This script is used to power the video section part of [Game Binder] (http://www.gamebinder.com/)
-*  Link to [Assassin's Creed Walkthrough] (http://www.gamebinder.com/12/assassins-creed/yt_walkthrough/)
+*  Link to [Assassin's Creed Walkthrough] (http://www.gamebinder.com/game/12/assassins-creed/yt_walkthrough/)
